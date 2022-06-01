@@ -1,0 +1,24 @@
+package com.seleniumwebdriver;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class webdriver3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\SANKET\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		//Launch browser
+		WebDriver dr = new ChromeDriver();
+		
+		dr.navigate().to("https://www.flipkart.com/");
+		String pageSource = dr.getPageSource();
+		System.out.println(pageSource);
+		
+		//Maximize the window
+		dr.manage().window().maximize();
+		
+		dr.close();
+		
+//		String WindowHandle = dr.getWindowHandle();
+	}
+
+}
