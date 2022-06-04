@@ -17,10 +17,10 @@ public class WebElement1 {
 		dr.get("https://online.actitime.com/thinkquotient/login.do");	//Opening actitime web site
 		dr.manage().window().maximize();
 		WebElement wb = dr.findElement(By.id("username"));
-		wb.sendKeys("omkars595@gmail.com");
+		wb.sendKeys("anjaliraghuvanshi928@gmail.com");
 		Thread.sleep(4000);
 		//Clear Method
-		wb.clear();
+	wb.clear();
 		
 		String text = dr.findElement(By.id("keepLoggedInLabel")).getText(); 
 		System.out.println(text);
