@@ -20,7 +20,8 @@ public class AutoSuggest {
 		dr.navigate().to("https://www.google.com/");
 		
 		dr.findElement(By.name("q")).sendKeys("class");
-	  //  dr.findElement(By.xpath("//b[text()=' in school']")).click();
+	  //
+		dr.findElement(By.xpath("//b[text()=' in school']")).click();
 
 	}
 
